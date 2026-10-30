@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-12T19:30:35",
+  "project": "MP_ALL",
+  "primary_metric": "auc",
+  "entries": [
+    {
+      "key": {
+        "model": "rf",
+        "step": "magpie",
+        "domain": "N",
+        "mode": "cv"
+      },
+      "params": {
+        "max_depth": 57,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "min_samples_split": 3,
+        "n_estimators": 850
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__MP_ALL__TUNE",
+        "job_id": "PAPER_V2__MP_ALL__TUNE__cv__rf__magpie__N",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              100,
+              1500,
+              50
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              5,
+              60,
+              1
+            ]
+          },
+          "max_features": [
+            "sqrt",
+            "log2",
+            null
+          ],
+          "min_samples_split": {
+            "quniform": [
+              2,
+              10,
+              1
+            ]
+          },
+          "min_samples_leaf": {
+            "quniform": [
+              1,
+              5,
+              1
+            ]
+          }
+        },
+        "data_sha256": "ac7a95502f187446d2d1b782b56fc6221ee3d6c7f1a90dd23542a8246c1278ac"
+      }
+    },
+    {
+      "key": {
+        "model": "rf",
+        "step": "magpie",
+        "domain": "O",
+        "mode": "cv"
+      },
+      "params": {
+        "max_depth": 30,
+        "max_features": "log2",
+        "min_samples_leaf": 1,
+        "min_samples_split": 3,
+        "n_estimators": 300
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__MP_ALL__TUNE",
+        "job_id": "PAPER_V2__MP_ALL__TUNE__cv__rf__magpie__O",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              100,
+              1500,
+              50
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              5,
+              60,
+              1
+            ]
+          },
+          "max_features": [
+            "sqrt",
+            "log2",
+            null
+          ],
+          "min_samples_split": {
+            "quniform": [
+              2,
+              10,
+              1
+            ]
+          },
+          "min_samples_leaf": {
+            "quniform": [
+              1,
+              5,
+              1
+            ]
+          }
+        },
+        "data_sha256": "2a54d8530450b2308dd82ac66125599fb8ce595994e00642635db2d86da26464"
+      }
+    },
+    {
+      "key": {
+        "model": "rf",
+        "step": "magpie",
+        "domain": "M",
+        "mode": "cv"
+      },
+      "params": {
+        "max_depth": 26,
+        "max_features": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 3,
+        "n_estimators": 650
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__MP_ALL__TUNE",
+        "job_id": "PAPER_V2__MP_ALL__TUNE__cv__rf__magpie__M",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              100,
+              1500,
+              50
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              5,
+              60,
+              1
+            ]
+          },
+          "max_features": [
+            "sqrt",
+            "log2",
+            null
+          ],
+          "min_samples_split": {
+            "quniform": [
+              2,
+              10,
+              1
+            ]
+          },
+          "min_samples_leaf": {
+            "quniform": [
+              1,
+              5,
+              1
+            ]
+          }
+        },
+        "data_sha256": "4afc2b12bba2cfbc030a9efc2a46fc48c94a341b976804b94092098557001688"
+      }
+    },
+    {
+      "key": {
+        "model": "lgbm",
+        "step": "magpie",
+        "domain": "N",
+        "mode": "cv"
+      },
+      "params": {
+        "colsample_bytree": 0.6632855608018366,
+        "learning_rate": 0.1633606161457056,
+        "max_depth": 11,
+        "min_child_samples": 10,
+        "n_estimators": 1750,
+        "num_leaves": 96,
+        "reg_alpha": 6.895381003880357e-07,
+        "reg_lambda": 7.7559483386917725,
+        "subsample": 0.950099043659659
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__MP_ALL__TUNE",
+        "job_id": "PAPER_V2__MP_ALL__TUNE__cv__lgbm__magpie__N",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              200,
+              2000,
+              50
+            ]
+          },
+          "learning_rate": {
+            "loguniform": [
+              0.01,
+              0.2
+            ]
+          },
+          "num_leaves": {
+            "quniform": [
+              15,
+              255,
+              4
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              3,
+              16,
+              1
+            ]
+          },
+          "min_child_samples": {
+            "quniform": [
+              5,
+              50,
+              1
+            ]
+          },
+          "subsample": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "colsample_bytree": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "reg_alpha": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          },
+          "reg_lambda": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          }
+        },
+        "data_sha256": "ac7a95502f187446d2d1b782b56fc6221ee3d6c7f1a90dd23542a8246c1278ac"
+      }
+    },
+    {
+      "key": {
+        "model": "lgbm",
+        "step": "magpie",
+        "domain": "O",
+        "mode": "cv"
+      },
+      "params": {
+        "colsample_bytree": 0.9449715643133462,
+        "learning_rate": 0.06392200866795063,
+        "max_depth": 4,
+        "min_child_samples": 6,
+        "n_estimators": 1800,
+        "num_leaves": 200,
+        "reg_alpha": 0.00030261051724978167,
+        "reg_lambda": 2.0961861167380287e-05,
+        "subsample": 0.8443417150491991
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__MP_ALL__TUNE",
+        "job_id": "PAPER_V2__MP_ALL__TUNE__cv__lgbm__magpie__O",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              200,
+              2000,
+              50
+            ]
+          },
+          "learning_rate": {
+            "loguniform": [
+              0.01,
+              0.2
+            ]
+          },
+          "num_leaves": {
+            "quniform": [
+              15,
+              255,
+              4
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              3,
+              16,
+              1
+            ]
+          },
+          "min_child_samples": {
+            "quniform": [
+              5,
+              50,
+              1
+            ]
+          },
+          "subsample": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "colsample_bytree": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "reg_alpha": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          },
+          "reg_lambda": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          }
+        },
+        "data_sha256": "2a54d8530450b2308dd82ac66125599fb8ce595994e00642635db2d86da26464"
+      }
+    },
+    {
+      "key": {
+        "model": "lgbm",
+        "step": "magpie",
+        "domain": "M",
+        "mode": "cv"
+      },
+      "params": {
+        "colsample_bytree": 0.9373714510862473,
+        "learning_rate": 0.1746346782240492,
+        "max_depth": 7,
+        "min_child_samples": 13,
+        "n_estimators": 1350,
+        "num_leaves": 176,
+        "reg_alpha": 0.0015777761112882724,
+        "reg_lambda": 1.5822462204941908e-05,
+        "subsample": 0.6816158095942927
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__MP_ALL__TUNE",
+        "job_id": "PAPER_V2__MP_ALL__TUNE__cv__lgbm__magpie__M",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              200,
+              2000,
+              50
+            ]
+          },
+          "learning_rate": {
+            "loguniform": [
+              0.01,
+              0.2
+            ]
+          },
+          "num_leaves": {
+            "quniform": [
+              15,
+              255,
+              4
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              3,
+              16,
+              1
+            ]
+          },
+          "min_child_samples": {
+            "quniform": [
+              5,
+              50,
+              1
+            ]
+          },
+          "subsample": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "colsample_bytree": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "reg_alpha": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          },
+          "reg_lambda": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          }
+        },
+        "data_sha256": "4afc2b12bba2cfbc030a9efc2a46fc48c94a341b976804b94092098557001688"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Local configuration
+private_paths.py
+.env
+.env.*
+.agents/
+.codex/
+
+# Python and Jupyter runtime files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.virtual_documents/
+.jupyter_ystore*
+.pytest_cache/

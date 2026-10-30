@@ -1,0 +1,365 @@
+{
+  "release": "PAPER_V2 publication source",
+  "date": "2026-10-29",
+  "publication_base_commit": "04d421393f998c5690bbc41cbba7177fe828bf7e",
+  "development_reference_commit": "1b003bb14e6e83a30a918b4e09dd4c3caba826fd",
+  "scope": "Required modules and package initializers for notebooks 01-07 and the publication exporter, with parameter registries, documentation and the local-path configuration template.",
+  "hash_algorithm": "SHA-256",
+  "manifest_excludes_itself": true,
+  "validation": {
+    "python_modules": 43,
+    "notebooks": 7,
+    "notebook_code_cells": 36,
+    "python_versions_for_syntax": [
+      "3.12.7",
+      "3.10.12"
+    ],
+    "pyflakes_findings": 0,
+    "unused_modules": 0,
+    "privacy_scan_findings": 0,
+    "comments_and_docstrings_reviewed": 723,
+    "stored_notebook_outputs_empty": true,
+    "runtime_comparison": {
+      "byte_identical_files": 11,
+      "files": [
+        "blocks.csv",
+        "blocks.png",
+        "chemistry.json",
+        "combined.csv",
+        "element_counts.csv",
+        "elements.csv",
+        "importance.csv",
+        "loaded.csv",
+        "metrics.json",
+        "roc.csv",
+        "roc.png"
+      ]
+    },
+    "archived_artifact_export": {
+      "tables": 11,
+      "assets": 42,
+      "byte_identical_files": 53
+    },
+    "private_paths_required": true,
+    "removed_unused_files": [
+      "core/composition_diagnostics.py",
+      "reports/plots.py"
+    ],
+    "not_rerun": [
+      "CIF processing",
+      "hyperparameter tuning",
+      "model fitting",
+      "full model inference",
+      "bootstrap regeneration"
+    ]
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 212,
+      "sha256": "d170725be9009b3c9dd33f7dbcb0221885e52ee11d821437ee134542f6182cd9"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1076,
+      "sha256": "f3d719fb650a2613e3310f5b529a1820f2eef045a40f42f20c90a062c3014805"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4974,
+      "sha256": "22865f73257eb496bca50f71619a75e179f38c132d6f2c852bdf20cc9f991185"
+    },
+    {
+      "path": "config/best_params_COD_CANON_V2_PAPER_V2.json",
+      "bytes": 9210,
+      "sha256": "d4b1a5cdb9c317412b920a375e71dcae68dd28c5697f1d249817db57838d2738"
+    },
+    {
+      "path": "config/best_params_MP_ALL_PAPER_V2.json",
+      "bytes": 10612,
+      "sha256": "8eb83c01d08ecac7e54f9878d4069c68218fe5d603eefed5d644451701d257dd"
+    },
+    {
+      "path": "config/paper_v2_runs.json",
+      "bytes": 2655,
+      "sha256": "e28201ac47b7808a305b7344631a8749f9d09be05bcfd64cff289838710d0192"
+    },
+    {
+      "path": "core/bundle.py",
+      "bytes": 2356,
+      "sha256": "fa001ff14a25fe31db6a29d9ba04457cbaab68f80a9f9778857d9017a49778a6"
+    },
+    {
+      "path": "core/chem_class.py",
+      "bytes": 6140,
+      "sha256": "31fdd3899192d60d599b466361038b10e71442bf0bacca41b764c2c7499254e7"
+    },
+    {
+      "path": "core/composition_features.py",
+      "bytes": 17424,
+      "sha256": "44251b56aea99084f6fe4d791e74821ae0aee40b1f54936f97be2fc9ebd2036e"
+    },
+    {
+      "path": "core/data_preparation_csv.py",
+      "bytes": 32694,
+      "sha256": "94a691f2f8a3cd5f9763741154d0dfaf4abde026038349b3564794c3699d3f7e"
+    },
+    {
+      "path": "core/feature_utils.py",
+      "bytes": 1523,
+      "sha256": "e465e047a55bb33602e61e266770ab13ad17638d296519c83e944a5b182f40fc"
+    },
+    {
+      "path": "core/folds.py",
+      "bytes": 5234,
+      "sha256": "f94913cd0fdfde90037e125293a254824e3d87d9e030e616f4e06e78f4eeac32"
+    },
+    {
+      "path": "core/hyperopt_tuning.py",
+      "bytes": 20853,
+      "sha256": "9432d828856c3e247f1eeb009dff96dd20bd64853b67ec4dc0812241493a1b44"
+    },
+    {
+      "path": "core/lgbm_train.py",
+      "bytes": 8317,
+      "sha256": "97b165eec010ba423f3d24c5872fd038ca86eec623de735aaf8f9708162cb89b"
+    },
+    {
+      "path": "core/log_timing.py",
+      "bytes": 1521,
+      "sha256": "dc37626a822a23cdc66b7fb6d8ae34ff2a22d784f3d47705ac2bcc859259dbca"
+    },
+    {
+      "path": "core/ml_utils.py",
+      "bytes": 23040,
+      "sha256": "7a97e693d7d6e54b1d729894b25a7b320003908732cfcec8fa1265f7d5134202"
+    },
+    {
+      "path": "core/notebook_logger.py",
+      "bytes": 3504,
+      "sha256": "32a1539684fd6d22f08c2c3e20e66fd8dd51f7b93678a60e54ba1e924bfb2105"
+    },
+    {
+      "path": "core/rf_train.py",
+      "bytes": 8278,
+      "sha256": "9898bd5453cc0dd7ca4ef0fc61b29385507a281a7b077c38e00cb8a15e6592d2"
+    },
+    {
+      "path": "core/step_print.py",
+      "bytes": 574,
+      "sha256": "a34316a861b7206321622da4ff98ae5e3b72a359852cfaab7f00cde1e1b4cf74"
+    },
+    {
+      "path": "core/task_handlers.py",
+      "bytes": 5556,
+      "sha256": "8cee5e68a8de34ac981e2e0f9d8789615c02f4a6ed0de52eeb1d461c98d27573"
+    },
+    {
+      "path": "docs/CODE_PROVENANCE.md",
+      "bytes": 1183,
+      "sha256": "4b8cdc393d18ac2964bf6ee4f483b5925e7c752c8bdf968e631b2cc9c3d83b71"
+    },
+    {
+      "path": "docs/METHODS.md",
+      "bytes": 15669,
+      "sha256": "0a5addb75870b4b49c61cb77c51d5dbf092ef8acce6bdbcd903f146379e851a7"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 6113,
+      "sha256": "b6cb3a298790eb6b6751ddae73c329f5b31e3be202795e4c1bc78ccfd99f3064"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 4361,
+      "sha256": "fd51a114a1210027dba72dfdece29a17049128914267e1aafe9a5cba61f60b9e"
+    },
+    {
+      "path": "notebooks/01_prepare_data.ipynb",
+      "bytes": 12928,
+      "sha256": "374626018ee5db42a7c2b701ba0fa2e12f3111cf7684e91545001046c0dbc345"
+    },
+    {
+      "path": "notebooks/02_create_splits.ipynb",
+      "bytes": 3570,
+      "sha256": "af87f02eeeecb9321b6d484db76b84c3f8e1d9347f115769ef92d703b2612a2d"
+    },
+    {
+      "path": "notebooks/03_train_models.ipynb",
+      "bytes": 9864,
+      "sha256": "ccb31e6e32b148e84664fcd81f21c5dd146a5e88bb605c301f34844168fa55ed"
+    },
+    {
+      "path": "notebooks/04_generate_reports.ipynb",
+      "bytes": 13923,
+      "sha256": "50093797a1f63d7a37ac38f3c99d8f712cd58ff4c7fbed178d4470cdcd458499"
+    },
+    {
+      "path": "notebooks/05_feature_importance.ipynb",
+      "bytes": 4117,
+      "sha256": "fb5c0808b58dc78ae0cb46e621291e989c20218578e2f931634da3413cb14326"
+    },
+    {
+      "path": "notebooks/06_bootstrap.ipynb",
+      "bytes": 6760,
+      "sha256": "49f5de54c4d88b0b322b1fe725cf6322552c02e3b0ee067cc3a77e650fe1fa0b"
+    },
+    {
+      "path": "notebooks/07_cross_evaluation.ipynb",
+      "bytes": 33862,
+      "sha256": "7748c9df5a71d8c2a8b21660d1b9692101db287c63f46cdfb593b72f536b9f76"
+    },
+    {
+      "path": "pipelines/__init__.py",
+      "bytes": 58,
+      "sha256": "274e0acb70ce332b1afbcfb91554eff34deee0cd071e374134803a9becbbf8ce"
+    },
+    {
+      "path": "pipelines/data_prep_pipeline.py",
+      "bytes": 20900,
+      "sha256": "e6ad8a78f734719fd4c2fc3a16bf990e8dd346719de576b4fe55220f3bc2c38b"
+    },
+    {
+      "path": "pipelines/features_pipeline.py",
+      "bytes": 10204,
+      "sha256": "515ceeaafbd2f3b65ec41962a4012b9b50589b5c2e20624e89d5fce3a9c97126"
+    },
+    {
+      "path": "pipelines/folds_pipeline.py",
+      "bytes": 10478,
+      "sha256": "a447e9d5004a5e5be64c75ece6cc80fee6774417ff901e4ee18c5208ae8d2506"
+    },
+    {
+      "path": "pipelines/hyper_tuning_pipeline.py",
+      "bytes": 33865,
+      "sha256": "e8871389a2ce05bed606b14336a89b6ac4fbe62d417ed0fb558fe121c00c3e7a"
+    },
+    {
+      "path": "pipelines/run_artifacts.py",
+      "bytes": 5408,
+      "sha256": "7f2c40814605ee45d73b715d830ca3c81ccd21a8f2ed0a3d1eb744af64f23f3d"
+    },
+    {
+      "path": "pipelines/train_pipeline.py",
+      "bytes": 23477,
+      "sha256": "0df754d916f584da71e63cd96cebd76936a1d7ca2e8fe394e312ec66f26d6127"
+    },
+    {
+      "path": "private_paths_template.py",
+      "bytes": 451,
+      "sha256": "1298c93e595430c3f7d2ab742cc73222238a420a1b7b4ffa5e5f6e73a37ebdd7"
+    },
+    {
+      "path": "project_config.py",
+      "bytes": 8706,
+      "sha256": "31784baa2fc1c775a6e339f13701e183247ed378766cca1a3393f943a3fffc32"
+    },
+    {
+      "path": "reports/__init__.py",
+      "bytes": 49,
+      "sha256": "8b685dc8d84f57cddcba2ef9b6899162ed7a31b16ed00b47ba6999db3fc51ec6"
+    },
+    {
+      "path": "reports/bootstrap_auc.py",
+      "bytes": 15907,
+      "sha256": "cab02cf2a7f6624474aeaaf5d3b3eb95c27d7c8dfd5b4f923888455e2f3caa81"
+    },
+    {
+      "path": "reports/chemistry.py",
+      "bytes": 4186,
+      "sha256": "27c59052e548c59e2d0e711c8d66977a123ef8d067e18b1b0cc65f33b04626f0"
+    },
+    {
+      "path": "reports/holdout_threshold.py",
+      "bytes": 16836,
+      "sha256": "0c7229d60ccb7c71544b0bf78563927ba9c49d4c8fcbd46aecef3d4273f150ca"
+    },
+    {
+      "path": "reports/importance.py",
+      "bytes": 3635,
+      "sha256": "c72755e9e335c83a1d310d5212ad90995639019cf83b225b6e4307cb03a03588"
+    },
+    {
+      "path": "reports/io.py",
+      "bytes": 5827,
+      "sha256": "2f3d3b1ea3da997d1d8ba4778b7c9450412a9dc1866bb8da99688704090ae7ae"
+    },
+    {
+      "path": "reports/metric_vs_Z.py",
+      "bytes": 21875,
+      "sha256": "d4288b47d369b904e85e18485edcd990da1e379af23b0b4c299a21f50f595434"
+    },
+    {
+      "path": "reports/paper_inputs.py",
+      "bytes": 4973,
+      "sha256": "d28c01dd6a9ba3901faa7a3aec60f86c79ea7e8116a737b8a37fbffe27f848c1"
+    },
+    {
+      "path": "reports/per_element.py",
+      "bytes": 4493,
+      "sha256": "15d274e4c38c892b405e05294f75ac9de1b1f0713ae87707dc25e930e08c4e1d"
+    },
+    {
+      "path": "reports/plot_importance.py",
+      "bytes": 16619,
+      "sha256": "49b1cca6e8aeec01ff42407a4ce28e605cd39b4abaa7293c6a118ffae55e9cac"
+    },
+    {
+      "path": "reports/plot_periodic_block.py",
+      "bytes": 16604,
+      "sha256": "2b292d0674f4bd5b9019782ad1a4a1af0c7fa54adb147000ef519bb72aca3b10"
+    },
+    {
+      "path": "reports/plots_common.py",
+      "bytes": 6143,
+      "sha256": "ca3c518118e20978f8cfa82667b7ab38909731f032ccf8cf23558843f9c14703"
+    },
+    {
+      "path": "reports/report_data.py",
+      "bytes": 4893,
+      "sha256": "2ccc0161abd9c60d4f2fd997fa94cfb973b9ef882522cf5b163806d2773dd7cd"
+    },
+    {
+      "path": "reports/roc_plots.py",
+      "bytes": 17805,
+      "sha256": "eee52d7127edc216edb005add7d5359f5ddbfac5606871ec832866940946f20b"
+    },
+    {
+      "path": "reports/stats_by_n_elements.py",
+      "bytes": 27790,
+      "sha256": "e1eef464ef367ce24719a6b55bff19ba5ed399b6aaab6b15b033af6cc1d5de6a"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 281,
+      "sha256": "19a9f73e090e5ccb2d7ec752e4fd543c32f8e1b6ba9eb063cba2a50785b868bd"
+    },
+    {
+      "path": "scripts/export_publication.py",
+      "bytes": 19010,
+      "sha256": "8318d44153d0fea252c51f82d9fc701365496450b2d687b485aeb5b81cb85b4f"
+    },
+    {
+      "path": "targets/__init__.py",
+      "bytes": 58,
+      "sha256": "92c563217f156a0366ed6facb2b189eaecaf83ea3788cc02967a8dc2e1c1b24e"
+    },
+    {
+      "path": "targets/base.py",
+      "bytes": 914,
+      "sha256": "b72c969c6bfd33b4a4b52254fd8ec506b4700ee827f9a105dd4240d5721a5936"
+    },
+    {
+      "path": "targets/centrosymmetry.py",
+      "bytes": 1104,
+      "sha256": "82f428b1af8f8e394d5c4ae27156db09923b10a0215466fe99fcdcb0d87a216a"
+    },
+    {
+      "path": "targets/preset.py",
+      "bytes": 3536,
+      "sha256": "7e71def9f2f2ae7ddf08d362155321a7febc33230e58182f03bf3a208d6bf793"
+    }
+  ],
+  "repository_root": "The source directory is the Git repository root; manuscript, supplement and result directories are external companion artifacts.",
+  "review_base_commit": "9a8f01967c3ef573ffb3be15b196f4f9fbf53a09"
+}

@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-10T12:53:58",
+  "project": "COD_CANON_V2",
+  "primary_metric": "auc",
+  "entries": [
+    {
+      "key": {
+        "model": "rf",
+        "step": "magpie",
+        "domain": "N",
+        "mode": "cv"
+      },
+      "params": {
+        "max_depth": 54.0,
+        "max_features": null,
+        "min_samples_leaf": 2.0,
+        "min_samples_split": 3.0,
+        "n_estimators": 1300.0
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "TUNE_PAPER_V2__COD_CANON_V2__TUNE__20261010_125358",
+        "job_id": "TUNE_PAPER_V2__COD_CANON_V2__TUNE__20261010_125358__cv__rf__magpie__N"
+      }
+    },
+    {
+      "key": {
+        "model": "rf",
+        "step": "magpie",
+        "domain": "O",
+        "mode": "cv"
+      },
+      "params": {
+        "max_depth": 11.0,
+        "max_features": null,
+        "min_samples_leaf": 1.0,
+        "min_samples_split": 3.0,
+        "n_estimators": 1150.0
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "TUNE_PAPER_V2__COD_CANON_V2__TUNE__20261010_150526",
+        "job_id": "TUNE_PAPER_V2__COD_CANON_V2__TUNE__20261010_150526__cv__rf__magpie__O"
+      }
+    },
+    {
+      "key": {
+        "model": "rf",
+        "step": "magpie",
+        "domain": "M",
+        "mode": "cv"
+      },
+      "params": {
+        "max_depth": 36,
+        "max_features": null,
+        "min_samples_leaf": 3,
+        "min_samples_split": 7,
+        "n_estimators": 1250
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__COD_CANON_V2__TUNE",
+        "job_id": "PAPER_V2__COD_CANON_V2__TUNE__cv__rf__magpie__M",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              100,
+              1500,
+              50
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              5,
+              60,
+              1
+            ]
+          },
+          "max_features": [
+            "sqrt",
+            "log2",
+            null
+          ],
+          "min_samples_split": {
+            "quniform": [
+              2,
+              10,
+              1
+            ]
+          },
+          "min_samples_leaf": {
+            "quniform": [
+              1,
+              5,
+              1
+            ]
+          }
+        },
+        "data_sha256": "fa351845c12c79faaa8c98d753012d1af998cdf3170f6f909e3534103f0613c2"
+      }
+    },
+    {
+      "key": {
+        "model": "lgbm",
+        "step": "magpie",
+        "domain": "N",
+        "mode": "cv"
+      },
+      "params": {
+        "colsample_bytree": 0.7936739623353964,
+        "learning_rate": 0.02639565625679032,
+        "max_depth": 12,
+        "min_child_samples": 10,
+        "n_estimators": 1600,
+        "num_leaves": 172,
+        "reg_alpha": 0.9022764647618362,
+        "reg_lambda": 0.003811281081263922,
+        "subsample": 0.9254621630561151
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__COD_CANON_V2__TUNE",
+        "job_id": "PAPER_V2__COD_CANON_V2__TUNE__cv__lgbm__magpie__N",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              200,
+              2000,
+              50
+            ]
+          },
+          "learning_rate": {
+            "loguniform": [
+              0.01,
+              0.2
+            ]
+          },
+          "num_leaves": {
+            "quniform": [
+              15,
+              255,
+              4
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              3,
+              16,
+              1
+            ]
+          },
+          "min_child_samples": {
+            "quniform": [
+              5,
+              50,
+              1
+            ]
+          },
+          "subsample": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "colsample_bytree": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "reg_alpha": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          },
+          "reg_lambda": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          }
+        },
+        "data_sha256": "431a682015c7603b62cf5ab203d2e95b1e18f61cfb9b006dd2a82d34cd27e9dc"
+      }
+    },
+    {
+      "key": {
+        "model": "lgbm",
+        "step": "magpie",
+        "domain": "O",
+        "mode": "cv"
+      },
+      "params": {
+        "colsample_bytree": 0.7061523522856209,
+        "learning_rate": 0.030542297160833776,
+        "max_depth": 7,
+        "min_child_samples": 10,
+        "n_estimators": 400,
+        "num_leaves": 176,
+        "reg_alpha": 3.1368891757665626e-07,
+        "reg_lambda": 1.6032446252346552e-07,
+        "subsample": 0.8203632205924384
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__COD_CANON_V2__TUNE",
+        "job_id": "PAPER_V2__COD_CANON_V2__TUNE__cv__lgbm__magpie__O",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              200,
+              2000,
+              50
+            ]
+          },
+          "learning_rate": {
+            "loguniform": [
+              0.01,
+              0.2
+            ]
+          },
+          "num_leaves": {
+            "quniform": [
+              15,
+              255,
+              4
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              3,
+              16,
+              1
+            ]
+          },
+          "min_child_samples": {
+            "quniform": [
+              5,
+              50,
+              1
+            ]
+          },
+          "subsample": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "colsample_bytree": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "reg_alpha": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          },
+          "reg_lambda": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          }
+        },
+        "data_sha256": "c555e83c60bd5277b36ef0a017752e5242f15bd2547519b898e51d4eda7c883c"
+      }
+    },
+    {
+      "key": {
+        "model": "lgbm",
+        "step": "magpie",
+        "domain": "M",
+        "mode": "cv"
+      },
+      "params": {
+        "colsample_bytree": 0.6264895847356788,
+        "learning_rate": 0.018418954630295675,
+        "max_depth": 13,
+        "min_child_samples": 7,
+        "n_estimators": 1750,
+        "num_leaves": 140,
+        "reg_alpha": 0.10214340055089795,
+        "reg_lambda": 2.5376005353735517e-06,
+        "subsample": 0.9344496290041638
+      },
+      "tuning": {
+        "strategy": "single_fold",
+        "val_fold": 0,
+        "metric": "auc",
+        "max_evals": 50,
+        "seed": 42,
+        "feature_prefix": "MagpieData",
+        "tune_run_id": "PAPER_V2__COD_CANON_V2__TUNE",
+        "job_id": "PAPER_V2__COD_CANON_V2__TUNE__cv__lgbm__magpie__M",
+        "n_startup_jobs": 20,
+        "search_space": {
+          "n_estimators": {
+            "quniform": [
+              200,
+              2000,
+              50
+            ]
+          },
+          "learning_rate": {
+            "loguniform": [
+              0.01,
+              0.2
+            ]
+          },
+          "num_leaves": {
+            "quniform": [
+              15,
+              255,
+              4
+            ]
+          },
+          "max_depth": {
+            "quniform": [
+              3,
+              16,
+              1
+            ]
+          },
+          "min_child_samples": {
+            "quniform": [
+              5,
+              50,
+              1
+            ]
+          },
+          "subsample": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "colsample_bytree": {
+            "uniform": [
+              0.6,
+              1.0
+            ]
+          },
+          "reg_alpha": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          },
+          "reg_lambda": {
+            "loguniform": [
+              1e-08,
+              10.0
+            ]
+          }
+        },
+        "data_sha256": "fa351845c12c79faaa8c98d753012d1af998cdf3170f6f909e3534103f0613c2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "project": "COD_CANON_V2",
+    "model": "rf",
+    "domain": "N",
+    "final": "PAPER_V2__COD_CANON_V2__final__rf__magpie__N__20261013_064854",
+    "cv": "PAPER_V2__COD_CANON_V2__cv__rf__magpie__N__20261012_205209"
+  },
+  {
+    "project": "COD_CANON_V2",
+    "model": "rf",
+    "domain": "O",
+    "final": "PAPER_V2__COD_CANON_V2__final__rf__magpie__O__20261013_070544",
+    "cv": "PAPER_V2__COD_CANON_V2__cv__rf__magpie__O__20261012_221518"
+  },
+  {
+    "project": "COD_CANON_V2",
+    "model": "rf",
+    "domain": "M",
+    "final": "PAPER_V2__COD_CANON_V2__final__rf__magpie__M__20261013_071342",
+    "cv": "PAPER_V2__COD_CANON_V2__cv__rf__magpie__M__20261012_225441"
+  },
+  {
+    "project": "COD_CANON_V2",
+    "model": "lgbm",
+    "domain": "N",
+    "final": "PAPER_V2__COD_CANON_V2__final__lgbm__magpie__N__20261013_070522",
+    "cv": "PAPER_V2__COD_CANON_V2__cv__lgbm__magpie__N__20261012_221300"
+  },
+  {
+    "project": "COD_CANON_V2",
+    "model": "lgbm",
+    "domain": "O",
+    "final": "PAPER_V2__COD_CANON_V2__final__lgbm__magpie__O__20261013_071337",
+    "cv": "PAPER_V2__COD_CANON_V2__cv__lgbm__magpie__O__20261012_225405"
+  },
+  {
+    "project": "COD_CANON_V2",
+    "model": "lgbm",
+    "domain": "M",
+    "final": "PAPER_V2__COD_CANON_V2__final__lgbm__magpie__M__20261013_080842",
+    "cv": "PAPER_V2__COD_CANON_V2__cv__lgbm__magpie__M__20261013_031023"
+  },
+  {
+    "project": "MP_ALL",
+    "model": "rf",
+    "domain": "N",
+    "final": "PAPER_V2__MP_ALL__final__rf__magpie__N__20261013_081914",
+    "cv": "PAPER_V2__MP_ALL__cv__rf__magpie__N__20261013_080914"
+  },
+  {
+    "project": "MP_ALL",
+    "model": "rf",
+    "domain": "O",
+    "final": "PAPER_V2__MP_ALL__final__rf__magpie__O__20261013_082059",
+    "cv": "PAPER_V2__MP_ALL__cv__rf__magpie__O__20261013_081809"
+  },
+  {
+    "project": "MP_ALL",
+    "model": "rf",
+    "domain": "M",
+    "final": "PAPER_V2__MP_ALL__final__rf__magpie__M__20261013_082100",
+    "cv": "PAPER_V2__MP_ALL__cv__rf__magpie__M__20261013_081813"
+  },
+  {
+    "project": "MP_ALL",
+    "model": "lgbm",
+    "domain": "N",
+    "final": "PAPER_V2__MP_ALL__final__lgbm__magpie__N__20261013_082040",
+    "cv": "PAPER_V2__MP_ALL__cv__lgbm__magpie__N__20261013_081621"
+  },
+  {
+    "project": "MP_ALL",
+    "model": "lgbm",
+    "domain": "O",
+    "final": "PAPER_V2__MP_ALL__final__lgbm__magpie__O__20261013_082059",
+    "cv": "PAPER_V2__MP_ALL__cv__lgbm__magpie__O__20261013_081811"
+  },
+  {
+    "project": "MP_ALL",
+    "model": "lgbm",
+    "domain": "M",
+    "final": "PAPER_V2__MP_ALL__final__lgbm__magpie__M__20261013_082111",
+    "cv": "PAPER_V2__MP_ALL__cv__lgbm__magpie__M__20261013_081908"
+  }
+]
