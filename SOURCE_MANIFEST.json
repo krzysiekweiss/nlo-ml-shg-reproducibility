@@ -3,7 +3,7 @@
   "date": "2026-10-29",
   "publication_base_commit": "04d421393f998c5690bbc41cbba7177fe828bf7e",
   "development_reference_commit": "1b003bb14e6e83a30a918b4e09dd4c3caba826fd",
-  "scope": "Required modules and package initializers for notebooks 01-07 and the publication exporter, with parameter registries, documentation and the local-path configuration template.",
+  "scope": "Required modules and package initializers for notebooks 01-07 and the publication exporter, with parameter registries, documentation and the local-path configuration template. Also includes the formula-based prediction command and its GitHub Actions workflow.",
   "hash_algorithm": "SHA-256",
   "manifest_excludes_itself": true,
   "validation": {
@@ -55,9 +55,14 @@
   },
   "files": [
     {
+      "path": ".github/workflows/predict-ncs.yml",
+      "bytes": 2421,
+      "sha256": "05ae9ad0b9207e7eea11a80d802c937ce4d5dc634a9ea2a50588e5f83d8583a5"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 212,
-      "sha256": "d170725be9009b3c9dd33f7dbcb0221885e52ee11d821437ee134542f6182cd9"
+      "bytes": 221,
+      "sha256": "71ec6aed64e91dc5421efd88f4006b155e3977c03d1eb65bd321bcb721bc08ba"
     },
     {
       "path": "LICENSE",
@@ -66,8 +71,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4974,
-      "sha256": "22865f73257eb496bca50f71619a75e179f38c132d6f2c852bdf20cc9f991185"
+      "bytes": 7016,
+      "sha256": "8ce737b0543f1e619978a4d4acc28f7bbf5d7c997be6262462704509d985043b"
     },
     {
       "path": "config/best_params_COD_CANON_V2_PAPER_V2.json",
@@ -245,6 +250,11 @@
       "sha256": "0df754d916f584da71e63cd96cebd76936a1d7ca2e8fe394e312ec66f26d6127"
     },
     {
+      "path": "predict_ncs.py",
+      "bytes": 4834,
+      "sha256": "906c45c8ed166264fd7e943da9fb61700925b6329f63caa5582a2945a537f3a9"
+    },
+    {
       "path": "private_paths_template.py",
       "bytes": 451,
       "sha256": "1298c93e595430c3f7d2ab742cc73222238a420a1b7b4ffa5e5f6e73a37ebdd7"
@@ -328,6 +338,11 @@
       "path": "reports/stats_by_n_elements.py",
       "bytes": 27790,
       "sha256": "e1eef464ef367ce24719a6b55bff19ba5ed399b6aaab6b15b033af6cc1d5de6a"
+    },
+    {
+      "path": "requirements-inference.txt",
+      "bytes": 132,
+      "sha256": "4770036225893b28e93e1a9810339011aa12a34b7372caff26f7861c7a791fd0"
     },
     {
       "path": "requirements.txt",

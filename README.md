@@ -2,6 +2,30 @@
 
 This source implements composition-based prediction of crystal noncentrosymmetry with Random Forest and LightGBM classifiers. The positive class is noncentrosymmetric (`N=1`); centrosymmetric structures are `C=0`. Chemical-domain codes `N`, `O` and `M` denote inorganic, organic and metal-organic compounds; figures display inorganic as `I`.
 
+## Predict noncentrosymmetry from a formula
+
+Use Python 3.11 in a fresh virtual environment and install the versions used to verify the fitted models.
+
+```bash
+python -m pip install -r requirements-inference.txt
+```
+
+Download the final model for your chosen training database, chemical domain and algorithm from [GitHub Releases](https://github.com/krzysiekweiss/nlo-ml-shg-reproducibility/releases). Save the original `model_*.pkl` file in `models/` beside `predict_ncs.py`. Load only trusted model files from the project's release. The [run registry](config/paper_v2_runs.json) lists the final model identifiers. The script runs with the downloaded model and a chemical formula.
+
+For the example below, place `model_PAPER_V2__MP_ALL__final__lgbm__magpie__N__20261013_082040.pkl` in `models/` and run the command from the repository root.
+
+```bash
+python predict_ncs.py --formula LiNbO3 --dataset mp --domain inorganic --model lgbm
+```
+
+This example returns an estimated NCS probability of 98.72% and the class `NCS`.
+
+Choose `mp` or `cod` for the training database, `inorganic`, `organic` or `metal-organic` for the domain, and `rf` or `lgbm` for the algorithm. Use `--models-dir DIR` if you keep the model files elsewhere. Quote formulas containing parentheses.
+
+The JSON output includes the model identifier, the noncentrosymmetric-class score (`ncs_score`), the model's estimated probability as a percentage (`ncs_probability_percent`) and the predicted class (`NCS` or `CS`). The paper's threshold of 0.5 applies to the unrounded score. Use the score to rank compositions for structural follow-up. A composition can correspond to multiple crystal structures.
+
+With write access to the repository, you can also open [Predict noncentrosymmetry in GitHub Actions](https://github.com/krzysiekweiss/nlo-ml-shg-reproducibility/actions/workflows/predict-ncs.yml), choose **Run workflow** and enter the formula and model options. The workflow downloads the selected file from the model release and displays the JSON result in the run summary.
+
 ## Environment and paths
 
 Use Python 3.10 or newer. From the repository root, create an isolated environment and install the declared dependencies:

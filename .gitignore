@@ -4,6 +4,7 @@ private_paths.py
 .env.*
 .agents/
 .codex/
+/models/
 
 # Python and Jupyter runtime files
 .venv/
